@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.spacer {
+    height: 20px;
+    width: 100%;
+}
+
+.gridOne {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+}
+
+.gridTwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+}
+
+.blueChild {
+    background-color: blue;
+}
+
+.redChild {
+    background-color: red;
+}
+
+.yellowChild {
+    background-color: yellow;
+}
+
+.gridThree {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 500px;
+    height: 300px;
+}
+
+.gridThree .child-1 {
+    background-color: pink;
+}
+.gridThree .child-2 {
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+.gridThree img{
+    object-fit: cover;
+    width: 500px;
+    height: 225px;
+}
+
+.gridFour {
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+    width: 500px;
+    background-color: green;
+    align-items: center;
+}
+
+#gridFour-child_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gridFive {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 500px;
+    background-color: lightskyblue;
+    padding: 5px;
+}
+
+#gridFive-child_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+#gridFive-child_2 img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.gridSix {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 500px;
+    background-color: lightgray;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.gridSix p {
+    font-family: 'Coming Soon', cursive;
+}
